@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Celebrare-Design With Us</title>
+</head>
+<body>
+
+    <h1 class="main-head">Design Your Wedding Invitations With Us</h1>
+
+    <div class="card">
+        <!-- Undo & Redo Buttons-->
+        <div>
+            <button class="style-button-1">Undo</button>
+            <button class="style-button-2">Redo</button>
+        </div>
+        
+        <!--For Displaying Image -->
+        <div>
+            <img class="image" src="https://img.freepik.com/free-psd/wedding-invitation-greeting-cards-elegant-vintage-style_1340-49454.jpg"/>
+        </div>
+        
+        <!--For Displaying Options-->
+        <div id="content">
+            <textarea id="textInput" placeholder="Enter your text here"></textarea>
+            <div id="options">
+            
+                <label class="label-style" for="fontFamily">Font Family:</label>
+
+                <select id="fontFamily">
+                    <option value="Arial">Arial</option>
+                    <option value="Times New Roman">Times New Roman</option>
+                    <option value="Verdana">Verdana</option>
+                    <option value="Roboto">Roboto</option>
+                </select>
+
+                <label class="label-style" for="fontSize">Font Size:</label>
+                <select id="fontSize">
+                    <option value="12px">Small</option>
+                    <option value="16px">Medium</option>
+                    <option value="20px">Large</option>
+                    <option value="24px">Extra-Large</option>
+                </select>
+
+                <label class="label-style" for="fontColor">Font Color:</label>
+                <input type="color" id="fontColor">
+            </div>
+            <button class="btn" onclick="applyStyles()">Apply</button>
+        </div>
+    </div>
+    <marquee class="flow-text">We Provide You the Best Designs</marquee>
+
+    <script src="index.js"></script>
+</body>
+</html>
